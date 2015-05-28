@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <META CHARSET="UTF-8">
+        <META NAME="VIEWPORT" CONTENT="WIDTH=DEVICE-WIDTH, INITIAL-SCALE=1.0">
+        <TITLE>YOUR PAGE TITLE</TITLE>
+        <STYLE>
+            /*
+            ... the styling ..
+            (EYT.css)
+            */
+        </STYLE>
+    </HEAD>
+    
+    <BODY>    
+        <NOSCRIPT>
+            <STYLE>
+                #yt_embed_container { display:none; }
+            </STYLE>
+            
+            <div class="center_top brown">
+                THIS PAGE NEEDS JAVASCRIPT.
+            </div>
+        </NOSCRIPT>
+    
+        <!-- THE IFRAMES and BUTTONS CONTAINER -->
+        <div id="yt_embed_container"></div>    
+        
+        <SCRIPT>
+            var EYT = { 
+                    // ... the main function block
+                    // ... (EYT.js)
+                };
+    
+            /*|=========================|**
+            **| INITIALIZE THE FUNCTION |**
+            **|=========================|*/        
+            // #[I] Initialize the main function.
+            EYT.init(                
+                // ======================= //
+                // List of input arguments //
+                // ======================= //
+                /*| #[I.1] The container element's ID |*/
+                "yt_embed_container",
+    
+                /*| #[I.2] Object                   |**
+                **|    {"title": "video ID"} pairs. |**
+                **|    Put as many as you want.     |*/
+                {
+                    "Video title": "YouTube video ID",
+                    "Video title": "YouTube video ID",
+                    "Video title": "YouTube video ID",                
+                    "Video title": "YouTube video ID",
+                    "Video title": "YouTube video ID",
+                    "Video title": "YouTube video ID",
+                    "Video title": "YouTube video ID"
+                },
+    
+                /*| #[I.3] Default dimensions and aspect ratio |*/
+                {
+                    /*| #[I.3.a] Dimensions in pixels |*/
+                    "height": 360, 
+                    "width": 640,
+                    
+                    /*| #[I.3.b] Aspect ratio |*/
+                    "aspectRatio": 9/16
+                    
+                    // It can be 3/4, or 1/2, up to you.
+                    // The largest number is the width ratio.
+                    // Put the smallest value in front: *small_number/big_number*.
+                    
+                    // This feature will work on screen which has
+                    // narrower width than you define above.
+                },
+                
+                /*| #[1.4] HEADER and FOOTER CONTENT |*/
+                // Customize the HEADER and FOOTER CSS from the [style] tag above.
+                // Header class: .header
+                // Footer class: .footer
+                {
+                    "header": "<div class='header'>" +
+                            "...header elements..." +
+                            "</div>",
+    
+                    "footer": "<div class='footer'>" +
+                            "...footer elements..." +
+                            "</div>" +
+                }
+            );
+    
+            // #[II] Initialize scrolling to the top of the page.
+            EYT.scroll();
+        </SCRIPT>
+    </BODY>
+</HTML>
