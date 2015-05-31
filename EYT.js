@@ -191,6 +191,7 @@ var EYT = { // Functions Object.
                 iframes[i].src = "";
                 iframes[i].removeEventListener("load", enable_btn_off, 0);
                 iframes[i].removeEventListener("error", enable_btn_off, 0);
+                iframes[i].style.opacity = 0.5;
 
                 // Forcing button thing.
                 interval = window.setInterval(check_btn, 100);
