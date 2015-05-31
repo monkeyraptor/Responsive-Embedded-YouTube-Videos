@@ -154,9 +154,6 @@ var EYT = { // Functions Object.
                             }
 
                             if (!UA.match(/firefox/gi)) {
-                                if (iframes[i].style.opacity === 1) {
-                                    iframes[i].style.opacity = 0.5;
-                                }
                                 if (wrpr[i].style.background && wrpr[i].style.color) {
                                     wrpr[i].style.background = "";
                                     wrpr[i].style.color = "";
