@@ -295,7 +295,7 @@ var EYT = { // Functions Object.
             };
 
             // Set initial *background-image* on iframes.
-            v.style.backgroundImage = 'url(https://i.ytimg.com/vi/' + videos[ids[i]] + '/0.jpg)';
+            v.style.backgroundImage = "url(" + url_image_base + videos[ids[i]] + url_image_base_end + ")";
 
             // Set value to YouTube URL textareas.
             yt_url[i].value = url_base + videos[ids[i]];
